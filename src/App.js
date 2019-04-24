@@ -26,13 +26,30 @@ class App extends Component {
   }
 }
 
-addTodo = event => {
-  event.preventDefault()
-  const newTodo = {}
-  this.setState({ 
-    todos: [...this.state.todos, newTodo], 
-    todo: '' 
-});
+// addTodo = event => {
+//   event.preventDefault()
+//   const newTodo = {}
+//   this.setState({ 
+//     todos: [...this.state.todos, newTodo], 
+//     todo: '' 
+// });
+// }
+
+render() {
+  return (
+    <div>
+      <TodoList
+        handleToggleComplete={this.toggleTodoComplete}
+        todos={this.state.todos}
+      />
+      <TodoForm
+        value={this.state.todo}
+        // handleTodoChange={this.changeTodo}
+        // handleAddTodo={this.addTodo}
+        // handleClearTodos={this.clearCompletedTodos}
+      />
+    </div>
+  );
 }
 
 export default App

@@ -3,7 +3,7 @@
 import React from "react";
 
 
-const Todo = props => {
+const TodoList = props => {
     return (
       <div
         style={props.todo.completed ? { opacity: 0.5 } : null}
