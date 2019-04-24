@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import TodoList from './components/TodoComponents/TodoList';
+import TodoForm from './components/TodoComponents/TodoForm';
 
 class App extends Component {
   // you will need a place to store your state in this component.
@@ -24,7 +26,7 @@ class App extends Component {
   }
 }
 
-addTodo = function event() {
+addTodo = event => {
   event.preventDefault()
   const newTodo = {}
   this.setState({ 
