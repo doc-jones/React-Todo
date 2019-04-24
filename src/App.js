@@ -26,9 +26,9 @@ class App extends Component {
 
 addTodo = function event() {
   event.preventDefault()
-  const newTodo {}
+  const newTodo = {}
   this.setState({ 
-    todos: [...this.state.todos, newItem], 
+    todos: [...this.state.todos, newTodo], 
     todo: '' 
 });
 }
