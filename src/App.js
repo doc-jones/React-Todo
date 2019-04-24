@@ -24,7 +24,7 @@ class App extends Component {
       todo: ''
     }
   }
-}
+};
 
 // addTodo = event => {
 //   event.preventDefault()
