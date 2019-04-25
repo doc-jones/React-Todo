@@ -8,12 +8,12 @@ class App extends React.Component {
     this.state = {
       todos: [
         {
-          task: 'Organize Garage',
+          task: 'Learn React',
           id: 1528817077286,
           completed: false
         },
         {
-          task: 'Bake Cookies',
+          task: 'Practice React Syntax',
           id: 1528817084358,
           completed: false
         }
@@ -56,7 +56,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="list-form">
         <TodoList
           handleToggleComplete={this.toggleTodoComplete}
           todos={this.state.todos}
