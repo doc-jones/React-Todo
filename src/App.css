@@ -1,9 +1,8 @@
 :root {
     --main-color: #5ea3d0;
-    --secondary-color: white;
+    --secondary-text-color: white;
     --main-text-color: #3e5869;
     --secondary-color: #b0c7d6;
-    --send-message-form: #F5F5F5;
 }
 
 * {
@@ -17,13 +16,17 @@ html, body {
     padding: 0;
     font-family: system-ui;
     font-weight: 200;
-    color: 	var(--main-text-color); 
+    color: 	var(--main-text-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
 }
 
 
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--main-text-color);
     border-radius: 5px;
     background: var(--main-color);
+    text-align: center;
+    color: var(--secondary-text-color);
 }
